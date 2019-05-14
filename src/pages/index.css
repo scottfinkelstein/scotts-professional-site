@@ -1,0 +1,125 @@
+.main {
+position: relative;
+display: flex;
+flex-direction: column;
+background-color: black;
+background: url('../images/Agile.jpg') center;
+background-size: cover;
+color: white;
+height: 100vh;
+padding: 20px;
+}
+
+.main div {
+display: flex;
+flex-direction: column;
+height: inherit;
+justify-content: center;
+max-width: 500px;
+}
+
+.main div p {
+font-size: 1.5em;
+color: #C7C7C7;
+}
+
+.agile-bg-video {
+position: absolute;
+display: flex;
+flex-direction: column;
+flex-grow: 1;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+z-index: -100;
+object-fit: cover;
+border-radius: 0.5px /* Chrome Fix */
+}
+
+.portfolio {
+display: flex;
+flex-direction: column;
+background-color: #FFF;
+color: #707070;
+height: 100%;
+min-height: 100vh;
+}
+
+.portfolio .copy {
+display: flex;
+flex-direction: column;
+
+padding: 20px;
+}
+
+.portfolio .copy h2 {
+margin-bottom: 0.5em;
+}
+
+.portfolio .grid-container {
+width: 100%;
+}
+
+.portfolio .grid-row {
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+flex-wrap: wrap;
+}
+
+.portfolio .grid-item {
+background-color: #CCC;
+flex-basis: 100%;
+height: 200px;
+}
+
+.portfolio .grid-item a {
+text-decoration: none;
+}
+
+.portfolio .grid-item-desc {
+display: flex;
+flex-direction: column;
+background-color: rgba(0, 0, 0, 0.6);
+color: #FFF;
+width: 100%;
+height: 100%;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.portfolio .grid-item-desc h3 {
+text-transform: uppercase;
+border-bottom: 1px solid #FFF;
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        background: none;
+    }
+    .main div {
+        padding-left: 90px;
+    }
+  
+    .portfolio .grid-row {
+        flex-direction: row;
+    }
+  
+    .portfolio .grid-item {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .portfolio .grid-item {
+        flex-basis: 25%;
+    }
+  
+    .portfolio .grid-item-desc {
+        display: none;
+    }
+  }
