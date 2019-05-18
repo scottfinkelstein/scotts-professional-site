@@ -8,7 +8,7 @@ const Post = ({ data }) => {
     return(
         <Layout>
             { post.feature_image ? (
-                <img src={ post.feature_image } alt={ post.title } />
+                <img src={ post.feature_image } alt={ post.title } style={{ width: `100%`, height: `auto` }}/>
             ) : null }
             <h1>{ post.title }</h1>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
