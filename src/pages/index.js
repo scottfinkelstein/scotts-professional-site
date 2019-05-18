@@ -44,9 +44,9 @@ const IndexPage = ({ data }) => (
               <Link to={ node.slug }>
               <div className="grid-item-desc">
                 <h3>{ node.title }</h3>
-                { node.primary_tag &&
+                { node.primary_tag ? (
                   <p>{ node.primary_tag.name }</p>
-                }
+                ) : null }
               </div>
               </Link>
             </div>
@@ -69,6 +69,10 @@ export const postQuery = graphql`
           excerpt
           feature_image
           slug
+          primary_tag {
+            id
+            name
+          }
         }
       }
     }
