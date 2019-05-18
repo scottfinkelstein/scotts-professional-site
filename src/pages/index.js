@@ -26,8 +26,11 @@ const IndexPage = ({ data }) => (
         <nav>
           <h1>Scott Finkelstein</h1>
           <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            {/* <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li> */}
+            { data.allGhostPage.edges.map(({ node }) => (
+              <li><Link to={ node.slug }>{ node.title }</Link></li>
+            ))}
           </ul>
         </nav>
       </header>
@@ -73,6 +76,17 @@ export const postQuery = graphql`
             id
             name
           }
+        }
+      }
+    }
+
+    allGhostPage {
+      edges {
+        node {
+          id
+          slug
+          title
+          html
         }
       }
     }
