@@ -44,7 +44,9 @@ const IndexPage = ({ data }) => (
               <Link to={ node.slug }>
               <div className="grid-item-desc">
                 <h3>{ node.title }</h3>
-                <p>Projects</p>
+                { node.primary_tag &&
+                  <p>{ node.primary_tag.name }</p>
+                }
               </div>
               </Link>
             </div>
