@@ -8,8 +8,8 @@ module.exports = {
     {
       resolve: `gatsby-source-ghost`,
       options: {
-        apiUrl: `http://localhost:8080`,
-        contentApiKey: `cb56c9046f71290cf3f8dfcbfd`
+        apiUrl: `http://206.189.223.52`,
+        contentApiKey: `c96467d5e0a29c5444c4d3d056`
       }
     },
     {
