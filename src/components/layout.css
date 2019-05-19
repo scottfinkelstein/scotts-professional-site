@@ -52,6 +52,11 @@ header nav {
   align-items: center;
 }
 
+header nav a {
+  color: #FFF;
+  text-decoration: none;
+}
+
 header nav ul {
   margin: 0;
   padding: 0;

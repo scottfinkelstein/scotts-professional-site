@@ -20,7 +20,7 @@ const Header = () => (
     render={data => (
       <header>
         <nav>
-          <h1>Scott Finkelstein</h1>
+          <h1><Link to="/">Scott Finkelstein</Link></h1>
           <ul>
             { data.allGhostPage.edges.map(({ node }) => (
               <li><Link to={ node.slug }>{ node.title }</Link></li>
