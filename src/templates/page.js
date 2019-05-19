@@ -1,17 +1,25 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
+import Header from '../components/header'
+
+const mainStyle = {
+    backgroundImage: `none`,
+    backgroundColor: `#000`
+}
 
 const Page = ({ data }) => {
     const page = data.ghostPage
 
     return(
         <Layout>
-            { page.feature_image ? (
-                <img src={ page.feature_image } alt={ page.title } style={{ width: `100%`, height: `auto` }}/>
-            ) : null }
-            <h1>{ page.title }</h1>
-            <div dangerouslySetInnerHTML={{ __html: page.html }} />
+            <div className="main" style={ mainStyle }>
+                <Header />
+                <div className="main-content">
+                    <h2>{ page.title }</h2>
+                    <div dangerouslySetInnerHTML={{ __html: page.html }} />
+                </div>
+            </div>
         </Layout>
     )
 }
