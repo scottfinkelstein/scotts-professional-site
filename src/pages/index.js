@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import Header from "../components/header"
 import "./index.css"
 
 import agile_jpg from "../images/Agile.jpg"
@@ -22,18 +23,8 @@ const IndexPage = ({ data }) => (
           {/* <source src={ agile_ogg } type="video/ogg" /> */}
       </video>
 
-      <header>
-        <nav>
-          <h1>Scott Finkelstein</h1>
-          <ul>
-            {/* <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li> */}
-            { data.allGhostPage.edges.map(({ node }) => (
-              <li><Link to={ node.slug }>{ node.title }</Link></li>
-            ))}
-          </ul>
-        </nav>
-      </header>
+      <Header />
+      
       <div id="main-content">
         <h2>Welcome</h2>
         <p>Exploring the spaces between technology, design, leadership, and learning.</p>
@@ -76,17 +67,6 @@ export const postQuery = graphql`
             id
             name
           }
-        }
-      }
-    }
-
-    allGhostPage {
-      edges {
-        node {
-          id
-          slug
-          title
-          html
         }
       }
     }
