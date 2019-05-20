@@ -101,6 +101,11 @@ border-bottom: 1px solid #FFF;
     }
   
     .portfolio .grid-item-desc {
-        display: none;
+        /* display: none; */
+        visibility: hidden;
+    }
+
+    .portfolio a:hover .grid-item-desc {
+        visibility: visible;
     }
   }

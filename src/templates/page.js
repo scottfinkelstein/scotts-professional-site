@@ -13,12 +13,14 @@ const Page = ({ data }) => {
 
     return(
         <Layout>
-            <div className="main" style={ mainStyle }>
-                <Header />
-                <div className="main-content">
-                    <h2>{ page.title }</h2>
-                    <div dangerouslySetInnerHTML={{ __html: page.html }} />
-                </div>
+            <div className="main" style = { mainStyle }>
+
+            <Header />
+
+            <div id="main-content">
+            <h2>{ page.title }</h2>
+            <span dangerouslySetInnerHTML={{ __html: page.html }} />
+            </div>
             </div>
         </Layout>
     )
