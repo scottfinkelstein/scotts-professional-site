@@ -3,24 +3,26 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Header from '../components/header'
 
-const mainStyle = {
-    backgroundImage: `none`,
-    backgroundColor: `#000`
-}
+
 
 const Page = ({ data }) => {
     const page = data.ghostPage
 
+    const mainStyle = {
+        backgroundImage: `url(${page.feature_image})`,
+        backgroundSize: `cover`
+    }
+
     return(
         <Layout>
-            <div className="main" style = { mainStyle }>
+            <div className="main" style={ mainStyle }>
 
-            <Header />
+                <Header />
 
-            <div id="main-content">
-            <h2>{ page.title }</h2>
-            <span dangerouslySetInnerHTML={{ __html: page.html }} />
-            </div>
+                <div id="main-content">
+                    <h2>{ page.title }</h2>
+                    <span dangerouslySetInnerHTML={{ __html: page.html }} />
+                </div>
             </div>
         </Layout>
     )
