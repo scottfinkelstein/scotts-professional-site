@@ -21,6 +21,10 @@ h2 {
   font-size: 2em;
 }
 
+a {
+  color: #FFF;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
