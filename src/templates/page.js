@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Header from '../components/header'
+import SEO from '../components/seo'
 
 
 
@@ -15,6 +16,7 @@ const Page = ({ data }) => {
 
     return(
         <Layout>
+            <SEO title={ page.title } keywords={[`developer`, `ux`, `apps`, `web`, `leadership`, `technology`]} />
             <div className="main" style={ mainStyle }>
 
                 <Header />

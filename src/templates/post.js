@@ -1,12 +1,14 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 const Post = ({ data }) => {
     const post = data.ghostPost
 
     return(
         <Layout>
+            <SEO title={ post.title } />
             { post.feature_image ? (
                 <img src={ post.feature_image } alt={ post.title } style={{ width: `100%`, height: `auto` }}/>
             ) : null }
