@@ -6,7 +6,7 @@ const Header = () => (
   <StaticQuery
     query={graphql`
       query {
-        allGhostPage {
+        allGhostPage(sort: {fields: [title], order: ASC}) {
           edges {
             node {
               id
