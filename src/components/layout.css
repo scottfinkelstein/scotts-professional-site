@@ -37,7 +37,7 @@ a {
   display: flex;
   flex-direction: column;
   color: white;
-  height: 100vh;
+  height: 90vh;
   padding: 20px;
   
 }
@@ -80,6 +80,14 @@ header nav {
   align-items: center;
 }
 
+header nav h1 img {
+  margin-top: -3px;
+}
+
+/* header nav h1:before {
+  content: url(../images/scott-logo.svg);
+} */
+
 header nav a {
   color: #FFF;
   text-decoration: none;
@@ -99,7 +107,6 @@ header nav ul li:not(:last-child) {
 header nav ul li a {
   text-decoration: none;
   color: #FFF;
-
 }
 
 
