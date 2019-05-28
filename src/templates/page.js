@@ -16,7 +16,7 @@ const Page = ({ data }) => {
 
     return(
         <Layout>
-            <SEO title={ page.title } keywords={[`developer`, `ux`, `apps`, `web`, `leadership`, `technology`]} />
+            <SEO title={ page.title } keywords={[`developer`, `user experience`, `ux`, `apps`, `web`, `leadership`, `technology`, `futurist`, `innovation`, `digital transformation`, `dx`]} />
             <div className="main" style={ mainStyle }>
 
                 <Header />

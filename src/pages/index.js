@@ -14,7 +14,7 @@ import agile_webm from "../images/Agile.webm"
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title="Home" keywords={[`developer`, `ux`, `apps`, `web`, `leadership`, `technology`]} />
+    <SEO title="Home" keywords={[`developer`, `user experience`, `ux`, `apps`, `web`, `leadership`, `technology`, `futurist`, `innovation`, `digital transformation`, `dx`]} />
     <div className="main">
 
       <video loop muted autoPlay poster={ agile_jpg } className="agile-bg-video">
