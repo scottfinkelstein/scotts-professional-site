@@ -5,6 +5,7 @@ module.exports = {
     author: `Scott Finkelstein`,
   },
   plugins: [
+    'gatsby-plugin-favicon',
     {
       resolve: `gatsby-source-ghost`,
       options: {
