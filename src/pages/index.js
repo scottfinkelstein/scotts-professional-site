@@ -13,6 +13,7 @@ import agile_webm from "../images/Agile.webm"
 //import agile_ogg from "../images/Agile.ogv"
 
 const IndexPage = ({ data }) => (
+  
   <Layout>
     <SEO title="Home" keywords={[`developer`, `user experience`, `ux`, `apps`, `web`, `leadership`, `technology`, `futurist`, `innovation`, `digital transformation`, `dx`]} />
     <div className="main">
