@@ -37,7 +37,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `scottfinkelstein.com`,
-        short_name: `starter`,
+        short_name: `Scott's Site`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
